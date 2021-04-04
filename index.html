@@ -1,153 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS">
-    <meta name="description" content="Tribute Page for Alexander Grothendieck">
-    <meta name="author" content="Pedro M M de Paula">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta
+      name="description"
+      content="Tribute Page for Alexander Grothendieck"
+    />
+    <meta name="author" content="Pedro M M de Paula" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Tribute to Alexander Grothendieck</title>
     <!--link rel="stylesheet" href="styles/reset.css"-->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Computer Modern Serif-->
+    <link
+      rel="stylesheet"
+      href="fonts/Computer Modern Serif/Serif/cmun-serif.css"
+    />
   </head>
   <body>
-    <main id="main">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#intro">Introduction</a>
+      <a href="#child-youth">Early Life</a>
+      <a href="#math-career">Mathematics</a>
+      <a href="#turning-point">Meditations</a>
+      <a href="#end">End</a>
+    </nav>
+    <header id="home">
+      <img
+        id="header-image"
+        src="/images/Grothendieck_profile.gif"
+        alt="Profile view picture of Alexander Grothendieck with a blackboard at the background circa 1965."
+      />
       <h1 id="title">Alexander Grothendieck</h1>
-      <p>The master of abstraction</p>
-      <figure id="img-div">
-        <img id="image" src="/images/3_SGA_Face.jpeg" alt="">
-        <figcaption id="img-caption">Alexander Grothendieck at the chalkboard in one of his famous Séminaire de Géométrie Algébrique, around 1962.</figcaption>
+    </header>
+    <main id="main">
+      <section id="intro">
+        <figure id="img-div">
+          <img id="image" src="/images/Grothendieck_seminar.jpeg" alt="" />
+          <figcaption id="img-caption">
+            Alexander Grothendieck at the chalkboard in one of his famous
+            Séminaire de Géométrie Algébrique, around 1962.
+          </figcaption>
         </figure>
+        <blockquote
+          cite="http://www.dam.brown.edu/people/mumford/blog/2014/Grothendieck.html"
+        >
+          <p>
+            Although mathematics became more and more abstract and general
+            throughout the 20th century, it was Alexander Grothendieck who was
+            the greatest master of this trend. His unique skill was to eliminate
+            all unnecessary hypotheses and burrow into an area so deeply that
+            its inner patterns on the most abstract level revealed themselves --
+            and then, like a magician, show how the solution of old problems
+            fell out in straightforward ways now that their real nature had been
+            revealed. His strength and intensity were legendary. He worked long
+            hours, transforming totally the field of algebraic geometry and its
+            connections with algebraic number theory. He was considered by many
+            the greatest mathematician of the 20th century.
+          </p>
+          <footer>--<cite>David Mumford and John Tate</cite></footer>
+        </blockquote>
+      </section>
       <section id="tribute-info">
-        <h3 id="headline">Here is a time line of Alexander Gronthendieck's life:</h3>
-        <ul>
-          <li>
-            <strong>1928</strong>
-            Born on 28 March 1928 in Berlin. His parents were Johanna "Hanka" Grothendieck and Alexander "Sascha"
-            Schapiro. 
-          </li>
-          <li>
-            <strong>1928-1933</strong>
-            Lives together with his parents and Hanka's daughter Frode (called Maidi, born 1924 from an earlier marriage)
-            in Berlin. Sascha works as a street photographer, one of the only jobs his anarchist beliefs allow him,
-            Hanka works irregularly as a journalist.
-          </li>
-          <li>
-            <strong>1933</strong>
-            Alexander's parents leave Berlin for Paris, leaving Alexander with a foster family, the Heydorns, in Hamburg.
-          </li>
-          <li>
-            <strong>1934-1939</strong>
-            Lives with the Heydorns in Hamburg-Blankenese, goes to school there and then to Gymnasium. During this time,
-            Sascha und Hanka take part in the Spanish civil war and return disillusioned; Hanka finds work in Nîmes.
-          </li>
-          <li>
-            <strong>1939</strong>
-            Alexander's foster mother decides that given the political situation and her own family's dangerous
-            involvement with the Resistance, it would be safer for him to be sent to join his parents in France. She
-            locates the parents and sends him away by train. He first joins his father, then spends the summer with his
-            mother in Nîmes.
-          </li>
-          <li>
-            <strong>1940-1942</strong>
-            Hanka is interned, as an "undesirable" (German), in the Rieucros Camp near Mende, together with Alexander.
-            From there, he goes to school in the village four or five kilometers distant. During this time Sascha is
-            interned in the camp of Le Vernet, from which he is deported to Auschwitz in 1942.
-          </li>
-          <li>
-            <strong>1942-1944</strong>
-            The Rieucros camp is dissolved, the inmates are transferred to Gurs. Alexander is sent to the village Le
-            Chambon sur Lignon, and attends the famous Collège-Lycée Cévénol through his baccalauréat.
-          </li>
-          <li>
-            <strong>1945-1948</strong>
-            Grothendieck and his mother move to a small village near Montpellier; he works irregularly on a farm while
-            studying mathematics at the university of Montpellier.
-          </li>
-          <li>
-            <strong>1948/1949</strong>
-            Having obtained his degree, Grothendieck goes to Paris in view of obtaining a doctorate. He takes several
-            courses and meets most of the famous mathematicians of the time, above all Henri Cartan.
-          </li>
-          <li>
-            <strong>1949-1953</strong>
-            Cartan advises Grothendieck to do his doctorate in Nancy with Laurent Schwartz. He goes there and finishes
-            his doctorate within two years, finding a new topology on tensor products of topological vector spaces.
-          </li>
-          <li>
-            <strong>1953/1954</strong>
-            Grothendieck spends time in Sao Paulo in Brazil, teaching topological vector spaces.
-          </li>
-          <li>
-            <strong>1955</strong>
-            Grothendieck spends part of the year at the University of Kansas in Lawrence, Kansas, then visits Chicago.
-            He hopes to find a position in France, has difficulties however because of his foreign nationality.
-          </li>
-          <li>
-            <strong>1959-1970</strong>
-            The IHES is created in Bures-sur-Yvette, in order for Grothendieck to have a research position there.
-            During the twelve years he spends there, he completely renews the theory of algebraic geometry, writing EGA
-            Éléments de Géométrie Algébrique (with Dieudonné) and SGA Séminaire de Géométrie Algébrique (with his
-            students).
-          </li>
-          <li>
-            <strong>1966</strong>
-            At the International Congress of Mathematicians in Moscow, Grothendieck receives the Fields Medal. However,
-            for political reasons, he refuses to travel to Moscow.
-          </li>
-          <li>
-            <strong>1970</strong>
-            Suddenly, on discovering that the IHES is partly funded by the miltary, Grothendieck leaves the institute.
-            He becomes acutely interested in ecological causes and founds the group Survivre et Vivre.
-          </li>
-          <li>
-            <strong>1970-1973</strong>
-            For two years, Grothendieck has a temporary post at the Collège de France in Paris, but he uses many of his
-            lectures to talk about issues of ecology and peace.
-          </li>
-          <li>
-            <strong>1973</strong>
-            Grothendieck accepts a professorship at the University of Montpellier.
-          </li>
-          <li>
-            <strong>1973-1984</strong>
-            Grothendieck lectures and has some graduate students in Montpellier. Until 1980, he lives in Villecun near
-            Lodeve, then in Mormoiron near Carpentras.
-          </li>
-          <li>
-            <strong>1984-1988</strong>
-            Discouraged by the teaching situation, Grothendieck applies for a temporary position with the CNRS for the
-            remaining years before his retirement. His research statement for this application is Esquisse d'un
-            Programme. From 1983 to 1985 he writes Recoltes et Semailles.
-          </li>
-          <li>
-            <strong>1980-1990</strong>
-            During these years, Grothendieck writes thousands of pages of mathematical and non-mathematical
-            meditations. His mathematical manuscripts are La longue marche à travers la théorie de Galois, (1981), A la
-            poursuite des champs (1983), Esquisse d´un programme (1983), Les dérivateurs (1987); the non-mathematical
-            works are the Eloge (1981, lost?), Récoltes et Semailles (1983-85), La clef des songes (1986).
-          </li>
-          <li>
-            <strong>1988</strong>
-            Grothendieck is awarded the Crafoord Prize jointly with Deligne, but refuses it. He retires officially on
-            January 10, 1988.
-          </li>
-          <li>
-            <strong>1991</strong>
-            In August, Grothendieck leaves his home suddenly, without warning anyone, for an unknown location. He
-            spends his time writing an enormous work on physics and philosophical meditations on themes such as free
-            choice, determinism and the existence of evil. He refuses practically every human contact.
-          </li>
-          <li>
-            <strong>2014</strong>
-            Dies on 13 November 2014 in Saint-Lizier, France.
-          </li>
-        </ul>
+        <h2>Here is a timeline of Alexander Gronthendieck's life:</h2>
+        <div id="child-youth">
+          <figure id="img-childhood">
+            <img src="/images/Grothendieck_childhood.jpg" alt="" />
+            <figcaption>
+              Alexander Grothendieck while he lived in Berlin with his parents.
+            </figcaption>
+          </figure>
+          <ul>
+            <li>
+              <strong>1928-1933</strong>
+              Alexander Grothendieck was born on 28 March 1928 in Berlin, where
+              he lived with his parents Johanna Grothendieck and Alexander
+              Schapiro, and his sister Maidi (Hanka's daughter from an earlier
+              marriage). His father worked as a street photographer, one of the
+              only jobs his anarchist beliefs allowed him, and his mother as a
+              journalist.
+            </li>
+            <li>
+              <strong>1933-1939</strong>
+              Grothendieck parents leaved Berlin for Paris to evade Nazism,
+              leaving Grothendieck with a foster family, the Heydorns, in
+              Hamburg. There he went to school and then Gymnasium, while his
+              parents took part in the Spanish civil war.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <figure id="img-teen">
+            <img src="/images/Grothendieck_teen.png" alt="" />
+            <figcaption>
+              Alexander Grothendieck playing piano in his teen years.
+            </figcaption>
+          </figure>
+          <ul>
+            <li>
+              <strong>1939-1942</strong>
+              Due to the incoming war, foster mother sent Grothendieck to his
+              parents in France. Grothendieck and his mother are interned in
+              Rieucros Camp as "undesirable" while his father is sent to Le
+              Vernet, later being sent to Auschwitz where he died.
+            </li>
+            <li>
+              <strong>1942-1945</strong>
+              His mother is sent to Gurs while he is permitted to live in the
+              village Le Chambon sur Lignon. There he attended the famous
+              Collège-Lyceé Cévénol through his baccalauréat, where he first
+              became fascinated with mathematics.
+            </li>
+          </ul>
+        </div>
+        <div id="math-career">
+          <figure id="img-1951">
+            <img src="/images/Grothendieck_1951.gif" alt="" />
+            <figcaption>
+              Alexander Grothendieck during his doctorate, 1951.
+            </figcaption>
+          </figure>
+          <ul>
+            <li>
+              <strong>1945-1949</strong>
+              After the war, Grothendieck and his mother moved to a small
+              village near Montpellier where he worked on a farm while studying
+              mathematics at the University of Montpellier. After graduating in
+              1948, he went to Paris where he took several courses and met most
+              of the famous mathematicians of the time.
+            </li>
+            <li>
+              <strong>1949-1953</strong>
+              Grothendieck worked on his doctorate under the supervision of
+              Laurent Schwartz, introducing new concepts and obtaining several
+              results in the area of functional analysis. By the end of his
+              doctorate he was considered one of the leading figures in the
+              area.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <figure id="img-montreal">
+            <img src="/images/Grothendieck_montreal.jpg" alt="" />
+            <figcaption>
+              Alexander Grothendieck at a summer school in Montreal, 1970.
+            </figcaption>
+          </figure>
+          <ul>
+            <li>
+              <strong>1953-1958</strong>
+              After he doctorated, Grothendieck worked as a visiting researcher
+              at the University of São Paulo, University of Kansas in Lawrence
+              and CNRS. In this period he migrated from functionl analysis to
+              algebraic geometry, publishing revolutionary works on homologiacal
+              algebra and the proof of the Grothendieck-Riemann-Roch theorem.
+            </li>
+            <li>
+              <strong>1958-1970</strong>
+              The IHES is created in order for Grothendieck to have a research
+              position there. During the twelve years he spent there, he
+              completely renewed the theory of algebraic geometry, writing
+              Éléments de Géométrie Algébrique (with Dieudonné) and Séminaire de
+              Géométrie Algébrique (with his students). It is during this time,
+              in 1966, that he is awarded the Fields Medal, however, for
+              political reasons, he refused to travel to Moscow for the
+              ceremony.
+            </li>
+          </ul>
+        </div>
+        <div id="turning-point">
+          <figure id="img-vietnam">
+            <img src="/images/Grothendieck_vietnam.png" alt="" />
+            <figcaption>
+              Alexander Grothendieck visiting Vietnam during the Vietnam War,
+              1966.
+            </figcaption>
+          </figure>
+          <ul>
+            <li>
+              <strong>1970-1973</strong>
+              Suddenly, on discovering that the IHES is partly funded by the
+              miltary, Grothendieck left the institute. He became acutely
+              interested in ecological causes and founded the group Survivre et
+              Vivre.
+            </li>
+            <li>
+              <strong>1973-1980</strong>
+              Grothendieck accepted a professorship at the University of
+              Montpellier. There he lectured and had some graduate students, but
+              got discouraged by the teaching situation and became increasingly
+              estranged from the mathematical community. It was during this time
+              that he started meditating.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <figure id="img-old">
+            <img src="/images/Grothendieck_old.jpg" alt="" />
+            <figcaption>
+              Alexander Grothendieck portrait taken in 1988.
+            </figcaption>
+          </figure>
+          <ul>
+            <li>
+              <strong>1980-1988</strong>
+              During this period, Grothendieck wrote thousands of pages of
+              mathematical and non-mathematical meditations. In 1984, he applied
+              for a temporary position with the CNRS with his proposal for
+              research Esquisse d'un Programme, a program that continues to date
+              to be of major interest in several branches of advanced
+              mathematics. In 1988, Grothendieck was awarded (with his student
+              Pierre Deligne) the Crafoord Prize, but refused it.
+            </li>
+            <li>
+              <strong>1988-2014</strong>
+              Grothendieck officially retired on January 10, 1988. Later, in
+              1991, he left his home for an unknown location. He spent his time
+              writing an enormous work on physics and philosophical meditations
+              on themes such as free choice, determinism and the existence of
+              evil. On 13 November 2014, aged 86, Grothendieck died in the
+              hospital of Saint-Girons, Ariège.
+            </li>
+          </ul>
+        </div>
       </section>
       <p>
-      If you want to learn more about this extraordinary man, you can access his 
-      <a id="tribute-link" href="https://en.wikipedia.org/wiki/Alexander_Grothendieck" target="_blank">Wikipedia's page</a>.
+        If you want to learn more about this extraordinary man, you can access
+        his
+        <a
+          id="tribute-link"
+          href="https://en.wikipedia.org/wiki/Alexander_Grothendieck"
+          target="_blank"
+          >Wikipedia's page</a
+        >.
       </p>
     </main>
+    <footer id="end"></footer>
   </body>
 </html>
