@@ -1,25 +1,52 @@
-/**********Body**********/
+/* Mobile-portrait */
+
+/********** Root **********/
+:root {
+  --navbarheight: 5rem; /* Height of the navigator bar */
+  --navbarheight-: -5rem;
+}
+
+html {
+  font-size: 1vw; /* Base font size */
+}
+
+/********** Body **********/
 body {
-  padding-top: 5vw;
+  padding-top: var(--navbarheight); /* Leaves space for the navbar */
   margin: 0;
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
-  font-family: "Computer Modern Serif", sans-serif;
-  font-size: 20px;
-  line-height: 2;
+  font-family: "Computer Modern Serif", sans-serif; /* Gives a familiar mathematical flavor to the page */
+  font-size: 3rem;
+  line-height: 1.5;
   text-align: center;
 }
 
-/**********Navigation Bar**********/
+img {
+  max-width: 100%;
+  max-height: 50rem;
+  height: auto; /* Keeps the image proportion intact */
+  display: block;
+  margin: auto; /* Centralize image on figure */
+}
+
+.anchor {
+  /* Anchors consider the navbar size */
+  padding-top: var(--navbarheight);
+  margin-top: var(--navbarheight-);
+}
+
+/********** Navigation Bar **********/
 nav {
   width: 100%;
+  height: var(--navbarheight);
   position: fixed;
-  top:0px;
+  top: 0px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgb(39, 39, 39);
-  font-size: 2.5vw;
+  background-color: rgba(50, 50, 50);
+  font-size: 3.3rem; /* approx 66% of the navheight for the navbar and hover to work properly */
 }
 
 nav a {
@@ -30,73 +57,268 @@ nav a {
 
 nav a:hover {
   background-color: white;
-  color: rgb(39, 39, 39);
+  color: rgb(50, 50, 50);
 }
 
-/**********Header**********/
+/********** Header **********/
 header {
-  width: 100%;
-  height: 15vw;
+  height: 15rem;
   display: flex;
-  background-color: rgb(80, 80, 80);
-}
-
-header img{
-    flex: 0 1;
-}
-
-header h1{
-    flex: 1 1;
-    font-size: 5vw;
-}
-
-/**********Main**********/
-
-/**********Footer**********/
-
-h1 {
+  background-color: rgb(100, 100, 100);
   font-size: 3rem;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  margin: 0 auto;
-}
-
-ul {
-  max-width: 1000px;
-  margin: 0 auto 50px auto;
-  text-align: left;
-  line-height: 1.6;
-}
-
-li {
-  margin: 16px 0;
-}
-
-main a:visited {
-  color: #74638f;
-}
-
-#main {
-  margin: 10px 10px;
-  padding: 15px;
-  border-radius: 5px;
-  background: rgb(150, 150, 150);
-}
-
-#img-div {
-  background: rgb(200, 200, 200);
-  padding: 10px;
+header img {
+  flex: 0 1;
   margin: 0;
 }
 
-#img-caption {
-  margin: 10px 0;
+header h1 {
+  flex: 1 1;
+  align-self: center;
 }
 
-#headline {
-  margin: 50px 0;
+/********** Main **********/
+#main {
+  margin: 1rem 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgb(150, 150, 150);
+}
+
+figure {
+  padding: 2.5rem;
+  margin: 2.5rem;
+  border-radius: 1rem;
+  background-color: rgb(200, 200, 200);
+}
+
+figcaption {
+  padding: 2.5rem 0 0 0;
+  margin: 0;
+  font-size: 2.8rem;
+}
+
+#citation {
+  padding: 2.5rem;
+  margin: 2.5rem;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+}
+
+ul {
+  padding: 0 2.5rem 0 2.5rem;
+  margin: 2.5rem;
+  text-align: left;
+}
+
+li {
+  margin: 0 0 2.5rem 0;
+}
+
+#more-info {
+  padding: 2.5rem;
+  margin: 2.5rem;
+  font-size: 4rem;
+}
+
+/********** Footer **********/
+footer {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(100, 100, 100);
+  font-size: 3rem;
+  justify-content: center;
+}
+
+footer p {
+  flex: 1 1;
+}
+
+footer div {
+  width: 100%;
+  display: flex;
+  flex: 1 1;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(50, 50, 50);
+  font-size: 3.3rem; /* same as navbar */
+}
+
+footer a {
+  flex: 1 1;
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  background-color: white;
+  color: rgb(50, 50, 50);
+}
+
+/********** Medias **********/
+
+/* Mobile-landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /********** Root **********/
+  html {
+    font-size: 0.56vw; /* This size takes in account the common proportion 1,77 */
+  }
+
+  /********** Main **********/
+  .grid1 {
+    display: grid;
+    grid-template-areas:
+      "heading heading"
+      "figure text";
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-areas:
+      "heading heading"
+      "text figure";
+  }
+
+  .grid1 h3,
+  .grid2 h3 {
+    grid-area: heading;
+    margin: 3rem 0;
+  }
+
+  .grid1 figure,
+  .grid2 figure {
+    grid-area: figure;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid1 #citation {
+    grid-area: text;
+    margin-top: 0;
+  }
+
+  .grid1 ul,
+  .grid2 ul {
+    grid-area: text;
+    margin-top: 0;
+    padding: 2.5rem;
+  }
+}
+
+/* Tablet-portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Tablet-landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /********** Root **********/
+  html {
+    font-size: 0.56vw; /* This size takes in account the common proportion 1,77 */
+  }
+
+  /********** Main **********/
+  .grid1 {
+    display: grid;
+    grid-template-areas:
+      "heading heading"
+      "figure text";
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-areas:
+      "heading heading"
+      "text figure";
+  }
+
+  .grid1 h3,
+  .grid2 h3 {
+    grid-area: heading;
+    margin: 3rem 0;
+  }
+
+  .grid1 figure,
+  .grid2 figure {
+    grid-area: figure;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid1 #citation {
+    grid-area: text;
+    margin-top: 0;
+  }
+
+  .grid1 ul,
+  .grid2 ul {
+    grid-area: text;
+    margin-top: 0;
+    padding: 2.5rem;
+  }
+}
+
+/* Laptops and desktops */
+@media only screen and (min-width: 1200px) {
+  /********** Root **********/
+  html {
+    font-size: 0.55vw; /* This size takes in account the common proportion 1,77 */
+  }
+
+  /********** Main **********/
+
+  .grid1 {
+    display: grid;
+    grid-template-areas:
+      "heading heading"
+      "figure text";
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-areas:
+      "heading heading"
+      "text figure";
+  }
+
+  .grid1 h3,
+  .grid2 h3 {
+    grid-area: heading;
+    margin: 3rem 0;
+  }
+
+  .grid1 figure,
+  .grid2 figure {
+    grid-area: figure;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid1 #citation {
+    grid-area: text;
+    margin-top: 0;
+  }
+
+  .grid1 ul,
+  .grid2 ul {
+    grid-area: text;
+    margin-top: 0;
+    padding: 2.5rem;
+  }
+
+  #img-teen img {
+    width: 60rem;
+  }
+
+  #img-montreal img {
+    width: 70rem;
+  }
+
+  #img-old img {
+    width: 40rem;
+  }
 }

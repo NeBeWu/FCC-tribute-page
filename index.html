@@ -20,14 +20,14 @@
   </head>
   <body>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#intro">Introduction</a>
-      <a href="#child-youth">Early Life</a>
-      <a href="#math-career">Mathematics</a>
-      <a href="#turning-point">Meditations</a>
-      <a href="#end">End</a>
+      <a href="#home" style="flex-grow: 3.5">Home</a>
+      <a href="#intro" style="flex-grow: 7">Introduction</a>
+      <a href="#child-youth" style="flex-grow: 5.5">Early Life</a>
+      <a href="#math-career" style="flex-grow: 7">Mathematics</a>
+      <a href="#turning-point" style="flex-grow: 6.5">Meditations</a>
+      <a href="#end" style="flex-grow: 2.5">End</a>
     </nav>
-    <header id="home">
+    <header id="home" class="anchor">
       <img
         id="header-image"
         src="/images/Grothendieck_profile.gif"
@@ -36,7 +36,8 @@
       <h1 id="title">Alexander Grothendieck</h1>
     </header>
     <main id="main">
-      <section id="intro">
+      <section id="intro" class="anchor grid1">
+        <h3>Introduction</h3>
         <figure id="img-div">
           <img id="image" src="/images/Grothendieck_seminar.jpeg" alt="" />
           <figcaption id="img-caption">
@@ -45,6 +46,7 @@
           </figcaption>
         </figure>
         <blockquote
+          id="citation"
           cite="http://www.dam.brown.edu/people/mumford/blog/2014/Grothendieck.html"
         >
           <p>
@@ -60,16 +62,18 @@
             connections with algebraic number theory. He was considered by many
             the greatest mathematician of the 20th century.
           </p>
-          <footer>--<cite>David Mumford and John Tate</cite></footer>
+          --<cite>David Mumford and John Tate</cite>
         </blockquote>
       </section>
       <section id="tribute-info">
         <h2>Here is a timeline of Alexander Gronthendieck's life:</h2>
-        <div id="child-youth">
+        <div id="child-youth" class="anchor grid1">
+          <h3>Childhood and Youth</h3>
           <figure id="img-childhood">
             <img src="/images/Grothendieck_childhood.jpg" alt="" />
             <figcaption>
-              Alexander Grothendieck while he lived in Berlin with his parents.
+              Alexander Grothendieck portrait when he was a child living in
+              Berlin with his parents.
             </figcaption>
           </figure>
           <ul>
@@ -91,7 +95,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="grid2">
           <figure id="img-teen">
             <img src="/images/Grothendieck_teen.png" alt="" />
             <figcaption>
@@ -115,7 +119,8 @@
             </li>
           </ul>
         </div>
-        <div id="math-career">
+        <div id="math-career" class="anchor grid1">
+          <h3>Mathematical Career</h3>
           <figure id="img-1951">
             <img src="/images/Grothendieck_1951.gif" alt="" />
             <figcaption>
@@ -141,7 +146,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="grid2">
           <figure id="img-montreal">
             <img src="/images/Grothendieck_montreal.jpg" alt="" />
             <figcaption>
@@ -170,7 +175,8 @@
             </li>
           </ul>
         </div>
-        <div id="turning-point">
+        <div id="turning-point" class="anchor grid1">
+          <h3>Turning Point and Later Works</h3>
           <figure id="img-vietnam">
             <img src="/images/Grothendieck_vietnam.png" alt="" />
             <figcaption>
@@ -196,9 +202,9 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="grid2">
           <figure id="img-old">
-            <img src="/images/Grothendieck_old.jpg" alt="" />
+            <img src="/images/Grothendieck_1988.jpg" alt="" />
             <figcaption>
               Alexander Grothendieck portrait taken in 1988.
             </figcaption>
@@ -226,9 +232,8 @@
           </ul>
         </div>
       </section>
-      <p>
-        If you want to learn more about this extraordinary man, you can access
-        his
+      <p id="more-info">
+        For more information about this extraordinary man, please access his
         <a
           id="tribute-link"
           href="https://en.wikipedia.org/wiki/Alexander_Grothendieck"
@@ -237,6 +242,17 @@
         >.
       </p>
     </main>
-    <footer id="end"></footer>
+    <footer id="end">
+      <p>Created by NeBeWu</p>
+      <div>
+        <a href="https://github.com/NeBeWu" target="_blank">GitHub</a>
+        <a
+          href="https://www.freecodecamp.org/fcc4068ef10-46c2-4616-9336-4174656e7e31"
+          target="_blank"
+          >FreeCodeCamp</a
+        >
+        <a href="https://codepen.io/NeBeWu" target="_blank">CodePen</a>
+      </div>
+    </footer>
   </body>
 </html>
